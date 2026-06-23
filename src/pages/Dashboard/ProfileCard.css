@@ -1,0 +1,68 @@
+.profile-card {
+  background: linear-gradient(135deg, var(--purple-start) 0%, var(--purple-end) 100%);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Avatar is handled by LetterAvatar component */
+
+.profile-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.profile-email {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2px;
+}
+
+.profile-username {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.profile-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.profile-pill {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 4px 16px;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+}
+
+@media (max-width: 480px) {
+  .profile-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-categories {
+    justify-content: center;
+  }
+}
